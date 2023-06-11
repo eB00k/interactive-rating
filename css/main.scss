@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$clr-bg: #131519;
+$clr-icon: #fc7614;
+$clr-text: #fff;
+$clr-box1: #232a34;
+$clr-box2: #181f29;
+$clr-selected: #7d8995;
+$clr-circle: #262f37;
+$transition: all 400 ease;
+
+body {
+  min-height: 100lvh;
+  background-color: $clr-bg;
+  color: $clr-text;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+
+  .container {
+    height: 100lvh;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .box {
+      width: 21rem;
+      height: 21rem;
+      padding: 2rem;
+      background: linear-gradient($clr-box1 10%, $clr-box2);
+      border: 1px solid transparent;
+      border-radius: 1.4rem;
+
+      display: flex;
+      flex-direction: column;
+
+      .rating {
+        width: 2.4rem;
+        height: 2.4rem;
+
+        background-color: $clr-circle;
+        border-radius: 50%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: $transition;
+
+        &:hover:not(.icon) {
+          background-color: $clr-icon;
+        }
+      }
+
+      .rating-numbers {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1rem;
+        font-size: 0.9rem;
+      }
+
+      h3 {
+        margin-top: 1.7rem;
+      }
+
+      p {
+        font-size: 0.7rem;
+        color: #7d8995;
+        margin-top: 0.4rem;
+      }
+
+      .btn {
+        margin-top: 2rem;
+        padding: 0.6rem;
+        border-radius: 1rem;
+        outline: none;
+        border: 0;
+
+        font-weight: bold;
+        background-color: $clr-icon;
+        color: $clr-text;
+        cursor: pointer;
+        transition: $transition;
+
+        &:hover {
+          opacity: 0.9;
+        }
+        &:active {
+          background-color: $clr-text;
+          color: $clr-icon;
+        }
+      }
+
+      .selected-result {
+        width: fit-content;
+        color: $clr-icon;
+        background-color: $clr-circle;
+        font-size: 0.8rem;
+        border: 1px solid transparent transparent;
+        border-radius: 1rem;
+        padding: 0.2rem 0.6rem;
+        margin: 0.5rem auto 0;
+      }
+
+      .selected {
+        background-color: $clr-selected;
+      }
+    }
+
+    .submitted-box {
+      text-align: center;
+      img {
+        width: 80%;
+        margin: 0 auto;
+      }
+      h3 {
+        margin-top: 1rem;
+      }
+    }
+  }
+}

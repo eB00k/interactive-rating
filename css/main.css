@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100lvh;
+  background-color: #131519;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+body .container {
+  height: 100lvh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .container .box {
+  width: 21rem;
+  height: 21rem;
+  padding: 2rem;
+  background: linear-gradient(#232a34 10%, #181f29);
+  border: 1px solid transparent;
+  border-radius: 1.4rem;
+  display: flex;
+  flex-direction: column;
+}
+body .container .box .rating {
+  width: 2.4rem;
+  height: 2.4rem;
+  background-color: #262f37;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 400 ease;
+}
+body .container .box .rating:hover:not(.icon) {
+  background-color: #fc7614;
+}
+body .container .box .rating-numbers {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+body .container .box h3 {
+  margin-top: 1.7rem;
+}
+body .container .box p {
+  font-size: 0.7rem;
+  color: #7d8995;
+  margin-top: 0.4rem;
+}
+body .container .box .btn {
+  margin-top: 2rem;
+  padding: 0.6rem;
+  border-radius: 1rem;
+  outline: none;
+  border: 0;
+  font-weight: bold;
+  background-color: #fc7614;
+  color: #fff;
+  cursor: pointer;
+  transition: all 400 ease;
+}
+body .container .box .btn:hover {
+  opacity: 0.9;
+}
+body .container .box .btn:active {
+  background-color: #fff;
+  color: #fc7614;
+}
+body .container .box .selected-result {
+  width: fit-content;
+  color: #fc7614;
+  background-color: #262f37;
+  font-size: 0.8rem;
+  border: 1px solid transparent transparent;
+  border-radius: 1rem;
+  padding: 0.2rem 0.6rem;
+  margin: 0.5rem auto 0;
+}
+body .container .box .selected {
+  background-color: #7d8995;
+}
+body .container .submitted-box {
+  text-align: center;
+}
+body .container .submitted-box img {
+  width: 80%;
+  margin: 0 auto;
+}
+body .container .submitted-box h3 {
+  margin-top: 1rem;
+}/*# sourceMappingURL=main.css.map */
